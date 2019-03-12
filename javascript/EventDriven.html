@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event Driven with Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="event.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="menu"></div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrolledTo = window.pageYOffset;
+            if(scrolledTo >= 50){
+                // document.getElementById("menu").style.width
+                menu.style.width = "50%";
+                menu.style.height = "25px";
+                menu.style.position = "fixed";
+                menu.style.top = "0";
+                menu.style.background = "rgba(0,0,0,0.5)";
+                menu.style.left = "30%";
+            }else{
+                menu.style.width = "100%";
+                menu.style.position = "relative";
+                menu.style.top = "0";
+                menu.style.height = "50px";
+                menu.style.left = "0";
+                menu.style.background = "rgba(0,0,0,1)";
+            }
+                // console.log(window.pageYOffset);
+            
+        });
+    </script>
+</body>
+
+</html>

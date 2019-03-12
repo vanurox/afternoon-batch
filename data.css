@@ -1,0 +1,33 @@
+* {
+    margin:0;
+}
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.box i {
+    color:#0a0;
+    font-size: 150px;
+    text-shadow: 1px 1px 5px #000;
+    transition: all 0.35s ease-out 0s;
+    cursor: pointer;
+}
+.box i:hover {
+    text-shadow: -5px -5px 5px #000;
+}
+.container .box {
+    margin:2px;
+    width: 250px;
+    min-height: 250px;
+    background:#333;
+    color:#e5e5e5;
+    text-align: justify;
+    padding:1em;
+}
+.container .red {
+    background:#a00;
+}
